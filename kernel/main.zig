@@ -27,6 +27,7 @@ export var multiboot align(4) linksection(".multiboot") = MultiBoot{
 
 export fn kernel_main() noreturn {
     term.initialize();
+    term.write("Hello, World!\n");
     while (true) {
         term.handleInput();
     }

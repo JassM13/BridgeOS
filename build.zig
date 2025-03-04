@@ -25,7 +25,7 @@ pub fn build(b: *std.Build) void {
     // Setting our kernel:
     const kernel = b.addExecutable(.{
         .name = "zig-os",
-        .root_source_file = b.path("src/main.zig"),
+        .root_source_file = b.path("kernel/main.zig"),
         .target = target,
         .optimize = optimize,
     });
